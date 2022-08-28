@@ -30,6 +30,8 @@ export class Asset {
       throw new Error('Issuer is invalid');
     }
 
+    if(code === 'xlm') code = 'XLM';
+    
     this.code = code;
     this.issuer = issuer;
   }
